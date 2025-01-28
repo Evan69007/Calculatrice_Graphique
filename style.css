@@ -1,0 +1,14 @@
+input {
+	width: 100%;
+	text-align: center;
+}
+
+input[type="text"] {
+	border: 1pxx solid black;
+	border-radius: 5px;
+}
+
+.calculator {
+	margin-top: 30vh;
+	margin-left: 40vw;
+}

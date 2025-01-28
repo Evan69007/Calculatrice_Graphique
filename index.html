@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="script.js"></script>
+	<title>Calculatrice Graphique</title>
+</head>
+	<body>
+		<div class="calculator">
+			<div class="container">
+				<div class="row align-items-center no-gutters">
+                    <div class="col-4">
+                        <input type="text" id="display" readonly>
+                    </div>
+                </div>
+				<div class="row align-items-center no-gutters">
+					<div class="col-1">
+						<input type="button" id="one" value="1" onclick="addButtonValue(1)">
+					</div>
+					<div class="col-1">
+						<input type="button" id="two" value="2" onclick="addButtonValue(2)">
+					</div>
+					<div class="col-1">
+						<input type="button" id="three" value="3" onclick="addButtonValue(3)">
+					</div>
+					<div class="col-1">
+                        <input type="button" id="divide" value="/" onclick="addButtonValue('/')">
+                    </div>
+				</div>
+				
+				<div class="row align-items-center no-gutters">
+					<div class="col-1">
+						<input type="button" id="four" value="4" onclick="addButtonValue(4)">
+					</div>
+					<div class="col-1">
+						<input type="button" id="five" value="5" onclick="addButtonValue(5)">
+					</div>
+					<div class="col-1">
+						<input type="button" id="six" value="6" onclick="addButtonValue(6)">
+					</div>
+					<div class="col-1">
+                        <input type="button" id="multiply" value="*" onclick="addButtonValue('*')">
+                    </div>
+				</div>
+				
+				<div class="row align-items-center no-gutters">
+					<div class="col-1">
+						<input type="button" id="seven" value="7" onclick="addButtonValue(7)">
+					</div>
+					<div class="col-1">
+						<input type="button" id="eight" value="8" onclick="addButtonValue(8)">
+					</div>
+					<div class="col-1">
+						<input type="button" id="nine" value="9" onclick="addButtonValue(9)">
+					</div>
+					<div class="col-1">
+                        <input type="button" id="subtract" value="-" onclick="addButtonValue('-')">
+                    </div>
+				</div>
+				
+				<div class="row align-items-center no-gutters">
+					<div class="col-1">
+                        <input type="button" id="clear" value="C" onclick="clearDisplay()">
+                    </div>
+					<div class="col-1">
+						<input type="button" id="zero" value="0" onclick="addButtonValue(0)">
+					</div>
+					<div class="col-1">
+						<input type="button" id="equal" value="=" onclick="calculate()">
+						
+					</div>
+					<div class="col-1">
+                        <input type="button" id="add" value="+" onclick="addButtonValue('+')">
+                    </div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
