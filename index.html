@@ -17,6 +17,25 @@
                     </div>
                 </div>
 				<div class="row align-items-center no-gutters">
+                    <div class="col-3">
+                        <input type="button" id="clear" value="C" onclick="clearDisplay()">
+                    </div>
+
+					<div class="col-3">
+						<input type="button" id="Del" value="DEL" onclick="delLastChar()">
+					</div>
+
+					<div class="col-3">
+						<input type="button" id="paraentheses" value="(" onclick="addButtonValue('(')">
+					</div>
+					
+                    <div class="col-3">
+                        <input type="button" id="closeParentheses" value=")" onclick="addButtonValue(')')">
+                    </div>
+
+					
+                </div>
+				<div class="row align-items-center no-gutters">
 					<div class="col-3">
 						<input type="button" id="one" value="1" onclick="addButtonValue(1)">
 					</div>
@@ -76,26 +95,7 @@
 					<div class="col-3">
                         <input type="button" id="add" value="+" onclick="addButtonValue('+')">
                 	</div>
-				</div>
-				<div class="row align-items-center no-gutters">
-                    <div class="col-3">
-                        <input type="button" id="clear" value="C" onclick="clearDisplay()">
-                    </div>
-
-					<div class="col-3">
-						<input type="button" id="Del" value="DEL" onclick="delLastChar()">
-					</div>
-
-					<div class="col-3">
-						<input type="button" id="paraentheses" value="(" onclick="addButtonValue('(')">
-					</div>
-					
-                    <div class="col-3">
-                        <input type="button" id="closeParentheses" value=")" onclick="addButtonValue(')')">
-                    </div>
-
-					
-                </div>
+				</div>	
 			</div>
 		</div>
 
