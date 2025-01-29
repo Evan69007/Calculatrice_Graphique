@@ -9,5 +9,18 @@ const clearDisplay = () => {
 }
 
 const calculate = () => {
-	display.value = eval(display.value);
+	let result = eval(display.value);
+	if (isNaN(result)) {
+		alert("Erreur : Calcul impossible");
+        display.value = "";
+        return;
+	}
+	else if (result == Infinity || result == -Infinity) {
+		alert("Erreur : Division par zéro");
+        display.value = "";
+        return;
+	}
+	else {
+		display.value = result
+	}
 }
