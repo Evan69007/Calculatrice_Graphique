@@ -24,3 +24,7 @@ const calculate = () => {
 		display.value = result
 	}
 }
+
+const delLastChar = () => {
+	display.value = display.value.slice(0, -1);
+}
