@@ -58,6 +58,7 @@ input {
 	text-align: center;
 	border-radius: 10px;
 	border: 2px solid red;
+	font-size: 16px;
 }
 
 input[type="button"] {
@@ -81,4 +82,8 @@ input[type="button"] {
 .clear {
 	background-color: aqua;
 	border: 2px solid gold;
+}
+
+#point {
+	font-weight: bold;
 }
