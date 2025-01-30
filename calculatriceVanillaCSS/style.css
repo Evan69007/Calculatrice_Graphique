@@ -63,7 +63,7 @@ input {
 
 input[type="button"] {
 	border-radius: 100%;
-	
+	font-weight: bold;
 }
 
 .number {
@@ -82,8 +82,4 @@ input[type="button"] {
 .clear {
 	background-color: aqua;
 	border: 2px solid gold;
-}
-
-#point {
-	font-weight: bold;
 }
