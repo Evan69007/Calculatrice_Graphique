@@ -1,0 +1,84 @@
+.container {
+	margin-top: 15px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas:
+		"Display Display Display Display"
+		"C DEL par endPar"
+		"one two three divide"
+		"four five six multiply"
+		"seven eight nine substract"
+		"point zero equal add";
+}
+
+.calculator {
+	background-color: black;
+	min-width: 200px;
+	margin-top: 20vh;
+	min-height: 320px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.Display { grid-area: Display; }
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.seven { grid-area: seven; }
+.eight { grid-area: eight; }
+.nine { grid-area: nine; }
+.zero { grid-area: zero; }
+.C { grid-area: C; }
+.DEL { grid-area: DEL; }
+.point { grid-area: point; }
+.par { grid-area: par; }
+.endPar { grid-area: endPar; }
+.equal { grid-area: equal; }
+.divide { grid-area: divide; }
+.multiply { grid-area: multiply; }
+.add { grid-area: add; }
+.substract { grid-area: substract; }
+
+body {
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	background-color: grey;
+}
+
+input {
+	max-width: 100%;
+	min-width: 90%;
+	max-height: 95%;
+	min-height: 90%;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid red;
+}
+
+input[type="button"] {
+	border-radius: 100%;
+	
+}
+
+.number {
+	background-color: rgb(120,120,120);
+	color: wheat;
+	border: 2px solid orange;
+}
+
+.operator {
+	background-color: orange;	
+	border: 2px solid rgb(136,0,0);
+}
+
+.parenthesis,
+.delete,
+.clear {
+	background-color: aqua;
+	border: 2px solid gold;
+}

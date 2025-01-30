@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="script.js"></script>
+	<title>Calculatrice</title>
+</head>
+<body>
+	<div class="calculator">
+		<div class="container">
+			<!-- <br> -->
+			<div class="Display">
+				<input type="text" id="display" readonly>
+			</div>
+			<div class="one">
+				<input type="button" value="1" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="two">
+				<input type="button" value="2" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="three">
+				<input type="button" value="3" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="four">
+				<input type="button" value="4" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="five">
+				<input type="button" value="5" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="six">
+				<input type="button" value="6" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="seven">
+				<input type="button" value="7" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="eight">
+				<input type="button" value="8" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="nine">
+				<input type="button" value="9" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="zero">
+				<input type="button" value="0" class="number" onclick="addButtonValue(value)">
+			</div>
+			<div class="C">
+				<input type="button" value="C" class="clear" onclick="clearDisplay()">
+			</div>
+			<div class="DEL">
+				<input type="button" value="Del" class="delete" onclick="deleteLastValue()">
+			</div>
+			<div class="point">
+				<input type="button" value="." class="operator" onclick="addButtonValue(value)">
+			</div>
+			<div class="par">
+				<input type="button" value="(" class="parenthesis" onclick="addButtonValue(value)">
+			</div>
+			<div class="endPar">
+				<input type="button" value=")" class="parenthesis" onclick="addButtonValue(value)">
+			</div>
+			<div class="equal">
+				<input type="button" value="=" class="operator" onclick="calculate()">
+			</div>
+			<div class="divide">
+				<input type="button" value="/" class="operator" onclick="addButtonValue(value)">
+			</div>
+			<div class="multiply">
+				<input type="button" value="*" class="operator" onclick="addButtonValue(value)">
+			</div>
+			<div class="add">
+				<input type="button" value="+" class="operator" onclick="addButtonValue(value)">
+			</div>
+			<div class="substract">
+				<input type="button" value="-" class="operator" onclick="addButtonValue(value)">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

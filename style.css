@@ -10,8 +10,6 @@ input[type="text"] {
 
 .calculator {
 	margin-top: 15vh;
-	margin-left: 30vw;
-	margin-right: 30vw;
 	background-color: grey;
 	border-radius: 10px;
 	min-width: 200px;
@@ -19,4 +17,7 @@ input[type="text"] {
 
 body {
 	font-size: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
